@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nikhilks-github/scrrpt-inputfile/static/css/main.fc277fad.chunk.css",
+    "main.js": "/nikhilks-github/scrrpt-inputfile/static/js/main.2dd459f6.chunk.js",
+    "main.js.map": "/nikhilks-github/scrrpt-inputfile/static/js/main.2dd459f6.chunk.js.map",
+    "runtime-main.js": "/nikhilks-github/scrrpt-inputfile/static/js/runtime-main.1ca62beb.js",
+    "runtime-main.js.map": "/nikhilks-github/scrrpt-inputfile/static/js/runtime-main.1ca62beb.js.map",
+    "static/js/2.328b4bb3.chunk.js": "/nikhilks-github/scrrpt-inputfile/static/js/2.328b4bb3.chunk.js",
+    "static/js/2.328b4bb3.chunk.js.map": "/nikhilks-github/scrrpt-inputfile/static/js/2.328b4bb3.chunk.js.map",
+    "index.html": "/nikhilks-github/scrrpt-inputfile/index.html",
+    "static/css/main.fc277fad.chunk.css.map": "/nikhilks-github/scrrpt-inputfile/static/css/main.fc277fad.chunk.css.map",
+    "static/js/2.328b4bb3.chunk.js.LICENSE.txt": "/nikhilks-github/scrrpt-inputfile/static/js/2.328b4bb3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ca62beb.js",
+    "static/js/2.328b4bb3.chunk.js",
+    "static/css/main.fc277fad.chunk.css",
+    "static/js/main.2dd459f6.chunk.js"
+  ]
+}
