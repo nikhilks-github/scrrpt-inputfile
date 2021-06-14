@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Button from "./Components/Button"
+import Modal from "./Components/Modal"
+import Card from "./Components/CardData"
 
 function App() {
+
+  const [isLoaded, setIsloaded] = useState(false); 
+  const [modal, setModal] = useState(false); 
+  const [dataForm, setDataForm] = useState({program: "", reportType: "", format: "", path: "", file:null}) ; 
+  console.log(dataForm)
+  function handleClick() {
+    setModal(!modal)
+     setTimeout(handleSubmit, 5000  )
+    }
+  function handleClear()
+  {
+    setModal(false)
+    setIsloaded(false)
+
+  }
+  function handleSubmit()
+  {
+    setIsloaded(true)
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className = 'header' >
+        SCORE REPORT INPUT FILE GENERATION
+      </div> 
+      <div style = {{display: 'flex', height: '100%'}}>  
+      <Card onChange = {(e) => { setDataForm({...dataForm, [e.target.name]: e.target.value})}} 
+       onFileUpload = { (e) => { setDataForm({...dataForm, [e.target.name]: e.target.files[0] })} } 
+       onSubmit = {handleClick} /> 
+       <Modal modal = {modal} isLoaded = {isLoaded} clear = {handleClear}/>
+      </div> 
     </div>
   );
 }
